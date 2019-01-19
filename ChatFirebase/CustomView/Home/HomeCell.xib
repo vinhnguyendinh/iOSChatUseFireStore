@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="77" id="KGk-i7-Jjw" customClass="HomeCell" customModule="ChatFirebase" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="324" height="77"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="324" height="76.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MFv-lP-LrO">
+                        <rect key="frame" x="10" y="13.5" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="34b-lR-hi6"/>
+                            <constraint firstAttribute="width" constant="50" id="bE3-IY-0tZ"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dwv-fK-DTk">
+                        <rect key="frame" x="70" y="10" width="39.5" height="18"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BrO-kZ-l9D">
+                        <rect key="frame" x="70" y="33" width="32" height="15.5"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9AM-g1-FsL">
+                        <rect key="frame" x="292" y="32" width="27" height="13"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="dwv-fK-DTk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Agx-VF-313"/>
+                    <constraint firstAttribute="trailing" secondItem="9AM-g1-FsL" secondAttribute="trailing" constant="5" id="BMq-AJ-2zb"/>
+                    <constraint firstItem="MFv-lP-LrO" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="CFF-cV-mkf"/>
+                    <constraint firstItem="BrO-kZ-l9D" firstAttribute="top" secondItem="dwv-fK-DTk" secondAttribute="bottom" constant="5" id="Rmc-dc-cjy"/>
+                    <constraint firstItem="dwv-fK-DTk" firstAttribute="leading" secondItem="MFv-lP-LrO" secondAttribute="trailing" constant="10" id="gNn-bG-krK"/>
+                    <constraint firstItem="BrO-kZ-l9D" firstAttribute="leading" secondItem="dwv-fK-DTk" secondAttribute="leading" id="jP5-uc-zV3"/>
+                    <constraint firstItem="MFv-lP-LrO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="nbZ-lN-AuE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstItem="9AM-g1-FsL" firstAttribute="centerY" secondItem="njF-e1-oar" secondAttribute="centerY" id="0bJ-LN-Kpv"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="avatarImageView" destination="MFv-lP-LrO" id="wQn-VL-1xp"/>
+                <outlet property="messageLabel" destination="BrO-kZ-l9D" id="AOV-e4-Smh"/>
+                <outlet property="nameLabel" destination="dwv-fK-DTk" id="sf7-2L-0oi"/>
+                <outlet property="timeLabel" destination="9AM-g1-FsL" id="SJa-cz-oRI"/>
+            </connections>
+            <point key="canvasLocation" x="140.80000000000001" y="138.0809595202399"/>
+        </tableViewCell>
+    </objects>
+</document>
