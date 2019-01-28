@@ -52,6 +52,10 @@ class HomeController: BaseController {
     @objc func handleLogOut(_ sender: UIBarButtonItem) {
         do {
             try Auth.auth().signOut()
+            
+            let loginController = LoginController.init(nibName: String(describing: LoginController.self), bundle: nil)
+            let navController = UINavigationController(rootViewController: loginController)
+            UIApplication.shared.keyWindow?.rootViewController = navController
         } catch let error {
             print("Log out fail: \(error.localizedDescription)")
         }

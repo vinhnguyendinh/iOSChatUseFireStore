@@ -27,11 +27,16 @@ class LoginController: BaseController {
     
     // MARK: - UI Action
     @IBAction func loginButtonClicked(_ sender: Any) {
-        guard let user = getUser() else {
+        CFProgressManager.shared.show()
+        
+        guard let email = emailTextField.text, let password = passwordTextField.text else {
+            CFProgressManager.shared.dismiss()
             return
         }
         
-        Auth.auth().signIn(withEmail: user.email, password: user.password) { (result, error) in
+        Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
+            CFProgressManager.shared.dismiss()
+
             if let error = error {
                 print("Login error: \(error.localizedDescription)")
                 return
@@ -47,14 +52,6 @@ class LoginController: BaseController {
     }
     
     // MARK: - Handler
-    func getUser() -> User? {
-        guard let email = emailTextField.text, let password = passwordTextField.text else {
-            return nil
-        }
-        
-        return User.init(name: "", email: email, password: password)
-    }
-    
     func routeToHomeController() {
         DispatchQueue.main.async { [weak self] in
             guard let `self` = self else {

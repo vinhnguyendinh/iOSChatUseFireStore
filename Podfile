@@ -11,7 +11,7 @@ target 'ChatFirebase' do
 	pod 'Firebase/Firestore'
   pod 'Firebase/Auth'
   pod 'IQKeyboardManager'
-
+  pod 'SVProgressHUD'
 
   target 'ChatFirebaseTests' do
     inherit! :search_paths

@@ -33,29 +33,30 @@ class RegisterController: BaseController {
     
     // MARK: - UI Action
     @IBAction func registerButtonClicked(_ sender: Any) {
-        guard let user = getUser() else {
+        CFProgressManager.shared.show()
+        
+        guard let name = nameTextField.text, let email = emailTextField.text, let password = passwordTextField.text else {
+            CFProgressManager.shared.dismiss()
             return
         }
         
-        Auth.auth().createUser(withEmail: user.email, password: user.password) { (data, error) in
+        Auth.auth().createUser(withEmail: email, password: password) { [weak self] (data, error) in
+            CFProgressManager.shared.dismiss()
+            
+            guard let `self` = self else { return }
             if let error = error {
                 print("Create user error: \(error.localizedDescription)")
                 return
             }
+            
+            let user = User.init(id: UUID().uuidString, name: name, email: email, password: password)
+            self.addUserInforToFirestore(user: user)
             
             self.routeToHomeController()
         }
     }
     
     // MARK: - Handler
-    func getUser() -> User? {
-        guard let name = nameTextField.text, let email = emailTextField.text, let password = passwordTextField.text else {
-            return nil
-        }
-        
-        return User.init(name: name, email: email, password: password)
-    }
-    
     func routeToHomeController() {
         DispatchQueue.main.async { [weak self] in
             guard let `self` = self else {
@@ -65,6 +66,20 @@ class RegisterController: BaseController {
             let homeController = HomeController.init(nibName: String(describing: HomeController.self), bundle: nil)
             self.navigationController?.pushViewController(homeController, animated: true)
         }
+    }
+    
+    func addUserInforToFirestore(user: User) {
+        let db = Firestore.firestore()
+        
+        var ref: DocumentReference? = nil
+        ref = db.collection(CFConstants.CollectionNames.users).addDocument(data: user.toJson(), completion: { (error) in
+            if let error = error {
+                print("Error create user to database: \(error.localizedDescription)")
+                return
+            }
+            
+            print("Successfully with id: \(ref!.documentID)")
+        })
     }
     
     // MARK: - Override Function

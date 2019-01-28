@@ -50,6 +50,24 @@
 		231AFAED21F30F8000715090 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 231AFAE921F30F8000715090 /* MessageCell.xib */; };
 		231AFAEE21F30F8000715090 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 231AFAE921F30F8000715090 /* MessageCell.xib */; };
 		231AFAEF21F30F8000715090 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 231AFAE921F30F8000715090 /* MessageCell.xib */; };
+		232BA53321F4429700439B11 /* CFProgressManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232BA53221F4429700439B11 /* CFProgressManager.swift */; };
+		232BA53421F4429700439B11 /* CFProgressManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232BA53221F4429700439B11 /* CFProgressManager.swift */; };
+		232BA53521F4429700439B11 /* CFProgressManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232BA53221F4429700439B11 /* CFProgressManager.swift */; };
+		232BA53721F446AB00439B11 /* CFConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232BA53621F446AB00439B11 /* CFConstants.swift */; };
+		232BA53821F446AB00439B11 /* CFConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232BA53621F446AB00439B11 /* CFConstants.swift */; };
+		232BA53921F446AB00439B11 /* CFConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232BA53621F446AB00439B11 /* CFConstants.swift */; };
+		232BA53B21F4481500439B11 /* JSONCompatible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232BA53A21F4481500439B11 /* JSONCompatible.swift */; };
+		232BA53C21F4481500439B11 /* JSONCompatible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232BA53A21F4481500439B11 /* JSONCompatible.swift */; };
+		232BA53D21F4481500439B11 /* JSONCompatible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232BA53A21F4481500439B11 /* JSONCompatible.swift */; };
+		232BA53F21F4785000439B11 /* DocumentSerializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232BA53E21F4785000439B11 /* DocumentSerializable.swift */; };
+		232BA54021F4785000439B11 /* DocumentSerializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232BA53E21F4785000439B11 /* DocumentSerializable.swift */; };
+		232BA54121F4785000439B11 /* DocumentSerializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232BA53E21F4785000439B11 /* DocumentSerializable.swift */; };
+		232BA54421F47BC800439B11 /* UsersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232BA54221F47BC800439B11 /* UsersController.swift */; };
+		232BA54521F47BC800439B11 /* UsersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232BA54221F47BC800439B11 /* UsersController.swift */; };
+		232BA54621F47BC800439B11 /* UsersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232BA54221F47BC800439B11 /* UsersController.swift */; };
+		232BA54721F47BC800439B11 /* UsersController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 232BA54321F47BC800439B11 /* UsersController.xib */; };
+		232BA54821F47BC800439B11 /* UsersController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 232BA54321F47BC800439B11 /* UsersController.xib */; };
+		232BA54921F47BC800439B11 /* UsersController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 232BA54321F47BC800439B11 /* UsersController.xib */; };
 		239DD6CF21F23C2300C0DC8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239DD6CE21F23C2300C0DC8A /* AppDelegate.swift */; };
 		239DD6D121F23C2300C0DC8A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239DD6D021F23C2300C0DC8A /* ViewController.swift */; };
 		239DD6D421F23C2300C0DC8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 239DD6D221F23C2300C0DC8A /* Main.storyboard */; };
@@ -98,6 +116,12 @@
 		231AFAE021F30EFE00715090 /* MessagesController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessagesController.xib; sourceTree = "<group>"; };
 		231AFAE821F30F8000715090 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		231AFAE921F30F8000715090 /* MessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
+		232BA53221F4429700439B11 /* CFProgressManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CFProgressManager.swift; sourceTree = "<group>"; };
+		232BA53621F446AB00439B11 /* CFConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CFConstants.swift; sourceTree = "<group>"; };
+		232BA53A21F4481500439B11 /* JSONCompatible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONCompatible.swift; sourceTree = "<group>"; };
+		232BA53E21F4785000439B11 /* DocumentSerializable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentSerializable.swift; sourceTree = "<group>"; };
+		232BA54221F47BC800439B11 /* UsersController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersController.swift; sourceTree = "<group>"; };
+		232BA54321F47BC800439B11 /* UsersController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UsersController.xib; sourceTree = "<group>"; };
 		239DD6CB21F23C2300C0DC8A /* ChatFirebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatFirebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		239DD6CE21F23C2300C0DC8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		239DD6D021F23C2300C0DC8A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -152,6 +176,8 @@
 		231AFAB221F2C14E00715090 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				232BA53E21F4785000439B11 /* DocumentSerializable.swift */,
+				232BA53A21F4481500439B11 /* JSONCompatible.swift */,
 				231AFAC221F2CA5E00715090 /* User.swift */,
 			);
 			path = Model;
@@ -172,6 +198,7 @@
 				231AFAC621F2CD5000715090 /* LoginController.swift */,
 				231AFADF21F30EFE00715090 /* MessagesController.swift */,
 				231AFAB621F2C1BC00715090 /* RegisterController.swift */,
+				232BA54221F47BC800439B11 /* UsersController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -179,6 +206,7 @@
 		231AFAB521F2C17400715090 /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
+				232BA54A21F47C9000439B11 /* Users */,
 				231AFAD621F30B3000715090 /* Home */,
 				231AFAC721F2CD5000715090 /* LoginController.xib */,
 				231AFAE721F30F5C00715090 /* Message */,
@@ -207,6 +235,23 @@
 			path = Message;
 			sourceTree = "<group>";
 		};
+		232BA53121F4426E00439B11 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				232BA53221F4429700439B11 /* CFProgressManager.swift */,
+				232BA53621F446AB00439B11 /* CFConstants.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		232BA54A21F47C9000439B11 /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				232BA54321F47BC800439B11 /* UsersController.xib */,
+			);
+			path = Users;
+			sourceTree = "<group>";
+		};
 		239DD6C221F23C2300C0DC8A = {
 			isa = PBXGroup;
 			children = (
@@ -232,6 +277,7 @@
 		239DD6CD21F23C2300C0DC8A /* ChatFirebase */ = {
 			isa = PBXGroup;
 			children = (
+				232BA53121F4426E00439B11 /* Common */,
 				231AFAB521F2C17400715090 /* CustomView */,
 				231AFAB421F2C16700715090 /* Controller */,
 				231AFAB321F2C15900715090 /* ViewModel */,
@@ -399,6 +445,7 @@
 			files = (
 				239DD6D921F23C2400C0DC8A /* LaunchScreen.storyboard in Resources */,
 				231AFAE421F30EFE00715090 /* MessagesController.xib in Resources */,
+				232BA54721F47BC800439B11 /* UsersController.xib in Resources */,
 				231AFACB21F2CD5000715090 /* LoginController.xib in Resources */,
 				231AFABB21F2C1BC00715090 /* RegisterController.xib in Resources */,
 				231AFAD321F302AA00715090 /* HomeController.xib in Resources */,
@@ -416,6 +463,7 @@
 			files = (
 				231AFAD421F302AA00715090 /* HomeController.xib in Resources */,
 				231AFAE521F30EFE00715090 /* MessagesController.xib in Resources */,
+				232BA54821F47BC800439B11 /* UsersController.xib in Resources */,
 				231AFABC21F2C1BC00715090 /* RegisterController.xib in Resources */,
 				231AFACC21F2CD5000715090 /* LoginController.xib in Resources */,
 				23DFFDBC21F2417400808A1D /* GoogleService-Info.plist in Resources */,
@@ -430,6 +478,7 @@
 			files = (
 				231AFAD521F302AA00715090 /* HomeController.xib in Resources */,
 				231AFAE621F30EFE00715090 /* MessagesController.xib in Resources */,
+				232BA54921F47BC800439B11 /* UsersController.xib in Resources */,
 				231AFABD21F2C1BC00715090 /* RegisterController.xib in Resources */,
 				231AFACD21F2CD5000715090 /* LoginController.xib in Resources */,
 				23DFFDBD21F2417400808A1D /* GoogleService-Info.plist in Resources */,
@@ -521,6 +570,7 @@
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
@@ -535,6 +585,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
@@ -575,15 +626,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				239DD6D121F23C2300C0DC8A /* ViewController.swift in Sources */,
+				232BA53F21F4785000439B11 /* DocumentSerializable.swift in Sources */,
 				231AFAEA21F30F8000715090 /* MessageCell.swift in Sources */,
+				232BA53721F446AB00439B11 /* CFConstants.swift in Sources */,
 				231AFAC821F2CD5000715090 /* LoginController.swift in Sources */,
 				231AFAD921F30B5200715090 /* HomeCell.swift in Sources */,
 				231AFAD021F302AA00715090 /* HomeController.swift in Sources */,
 				239DD6CF21F23C2300C0DC8A /* AppDelegate.swift in Sources */,
 				231AFABF21F2C1DB00715090 /* BaseController.swift in Sources */,
+				232BA53321F4429700439B11 /* CFProgressManager.swift in Sources */,
 				231AFAC321F2CA5E00715090 /* User.swift in Sources */,
+				232BA54421F47BC800439B11 /* UsersController.swift in Sources */,
 				231AFAB821F2C1BC00715090 /* RegisterController.swift in Sources */,
 				231AFAE121F30EFE00715090 /* MessagesController.swift in Sources */,
+				232BA53B21F4481500439B11 /* JSONCompatible.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -593,13 +649,18 @@
 			files = (
 				231AFAC421F2CA5E00715090 /* User.swift in Sources */,
 				231AFADA21F30B5200715090 /* HomeCell.swift in Sources */,
+				232BA54521F47BC800439B11 /* UsersController.swift in Sources */,
 				231AFAB921F2C1BC00715090 /* RegisterController.swift in Sources */,
 				231AFAD121F302AA00715090 /* HomeController.swift in Sources */,
 				231AFAC021F2C1DB00715090 /* BaseController.swift in Sources */,
 				239DD6E421F23C2400C0DC8A /* ChatFirebaseTests.swift in Sources */,
+				232BA54021F4785000439B11 /* DocumentSerializable.swift in Sources */,
+				232BA53821F446AB00439B11 /* CFConstants.swift in Sources */,
 				231AFAC921F2CD5000715090 /* LoginController.swift in Sources */,
 				231AFAE221F30EFE00715090 /* MessagesController.swift in Sources */,
+				232BA53C21F4481500439B11 /* JSONCompatible.swift in Sources */,
 				231AFAEB21F30F8000715090 /* MessageCell.swift in Sources */,
+				232BA53421F4429700439B11 /* CFProgressManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -609,13 +670,18 @@
 			files = (
 				231AFAC521F2CA5E00715090 /* User.swift in Sources */,
 				231AFADB21F30B5200715090 /* HomeCell.swift in Sources */,
+				232BA54621F47BC800439B11 /* UsersController.swift in Sources */,
 				231AFABA21F2C1BC00715090 /* RegisterController.swift in Sources */,
 				231AFAD221F302AA00715090 /* HomeController.swift in Sources */,
 				231AFAC121F2C1DB00715090 /* BaseController.swift in Sources */,
 				239DD6EF21F23C2400C0DC8A /* ChatFirebaseUITests.swift in Sources */,
+				232BA54121F4785000439B11 /* DocumentSerializable.swift in Sources */,
+				232BA53921F446AB00439B11 /* CFConstants.swift in Sources */,
 				231AFACA21F2CD5000715090 /* LoginController.swift in Sources */,
 				231AFAE321F30EFE00715090 /* MessagesController.swift in Sources */,
+				232BA53D21F4481500439B11 /* JSONCompatible.swift in Sources */,
 				231AFAEC21F30F8000715090 /* MessageCell.swift in Sources */,
+				232BA53521F4429700439B11 /* CFProgressManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
